@@ -3,7 +3,5 @@
 
 def build():
     base(dev=True)
-    install.conda(use_mamba=True)
-    install.python()
-    install.python_packages(name=["uv"])
+    install.pixi()
     shell("fish")
